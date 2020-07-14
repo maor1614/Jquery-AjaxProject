@@ -88,7 +88,7 @@ function aboutPage() {
 
 //
 function loader(component) {
-    let gif = '<img  src="./assets/762.gif"></img>';
+    let gif = '<img  src="./Assets/762.gif"></img>';
     let loaderDiv = `<div class="loader" col-12">${gif}</div>`;
     $(loaderDiv).append(gif);
     $(component).append(loaderDiv);
