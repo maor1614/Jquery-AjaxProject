@@ -1,0 +1,403 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("./Assets/2927262.jpg") no-repeat center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+#header{
+  padding-bottom: 40px;
+  height: 30%;
+  background-position: bottom;
+  text-align: center;
+  color: black;
+}
+#titleheader{
+  font-size: 8rem;
+}
+#main{
+  text-align: center;
+  padding: 100px;
+  width: 100%;
+}
+#dynamicArea{
+  background-color:lightseagreen;
+  height: 100%;
+  width:100%;
+  float: right;
+}
+#footer{
+  color: white;
+  text-align: center;
+  background-color: #0455b1f5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+#searchCoinsForm{
+  text-align: center;
+}
+#showCoinsHeader{
+  margin-top: 10px;
+  color: blue;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.349);
+}
+h3{
+  text-align: center;
+}
+.infoBtnDiv{
+ position: absolute;
+ bottom: 0;
+ left: 5;
+ margin-right: 20px;
+ margin-bottom: 20px;
+}
+.coinDivClass .btn-info{
+  background-color: #0455b1f5;
+  border-color:#17a3b8b7;
+} 
+.coinDivClass .infoBtn:hover {
+  background-color:#17a3b8ee;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#searchCoinsForm .btn-info{
+  background-color: #0455b1f5;
+  border-color:#17a3b8b7;
+
+}
+#searchCoinsForm .btn-info:hover {
+  background-color:#17a3b8ee;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#coinsPanel{
+  width: 100%;
+  height:100%;
+  padding: 40px;
+  /* margin-top: 20px; */
+  /* background-color:lightslategray; */
+  word-wrap: break-word;
+  overflow-y: auto;
+  text-align: center;
+  border: 2px solid black;
+}
+.coinDivClass{
+  background-image:url("./Assets/abstract-background-297.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto; 
+  display: inline-block;
+  padding-top: 5px;
+  border-radius: 8px;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  font-size: medium;
+  color: #2196F3 ;
+}
+.card .card-body{
+  float: left;
+}
+.coinDetailsP{
+  position: absolute;
+  left: 60;
+  bottom: 0;
+  height: fit-content;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.coinDivClass img{ 
+  height: 100px;
+  width: 150px;
+}
+
+#myPicture{
+  border-radius: 30px;
+  height: 10%;
+}
+#aboutMeDiv{
+  color: white;
+  background-color: rgba(135, 206, 250, 0.692);
+  border-radius: 20px;
+  float: left;
+  margin:30px;
+  margin-top:90px;
+  padding: 15px;
+}
+
+#chartContainer{
+ height: 100%;
+  
+}
+
+
+/* /// NavBar Section////////////////////////////////////////////////////////////////////////////////    */
+.topnav {
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;   
+  background-image:url("./Assets/pngfuel.com.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+}
+.topnav a:hover {
+  background-color: #2196F3;
+  color: white;
+  border-radius: 8px;
+}
+.topnav a.active {
+  background-color:  white;
+  color: #2196F3;
+  border-radius: 8px;
+}
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.topnav .search-container button:hover {
+  background: #ccc;
+} 
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  border: none;
+  font-size: 17px;
+  border-radius: 8px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+  .topnav {
+      overflow: hidden;
+      /* background-color: #2196F3; */
+      position: relative;
+      border-radius: 8px;   
+      background-image:url("./Assets/340.jpg");
+      background-position-y: -100px;
+  }
+  .topnav a {
+      float: left;
+      display: block;
+      color: #2196F3;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 22px;
+  }
+  #main{
+      text-align: center;
+      padding: 40px;
+      width: 100%;
+  }
+  #header{
+      padding-bottom: 40px;
+      height: 25%;
+      background-position: bottom;
+      text-align: center;
+      color: white;
+  }
+  #myPicture{
+      border-radius: 30px;
+      height: 40%;
+  }
+  
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* This Is The Scrollbars Section */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2196F3; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2196F3; 
+}
+
+/* width */
+#coinsPanel::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#coinsPanel::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+#coinsPanel::-webkit-scrollbar-thumb {
+  background:rgba(11, 8, 196, 0.521); 
+}
+
+/* Handle on hover */
+#coinsPanel::-webkit-scrollbar-thumb:hover {
+  background: rgb(33, 2, 143); 
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////// */
+/* switch section */
+.checkBoxDiv{
+  height: 20px;
+
+}
+.custom-control-input{
+  height: 200px;
+}
+
+.switch.primary-switch label input[type=checkbox]:checked + .lever {
+  background-color: #689DF6;
+}
+
+.switch.primary-switch label input[type=checkbox]:checked + .lever:after {
+  background-color: #4285F4;
+}
+
+
+.switch {
+  position: absolute;
+  display: inline-block;
+  /* float: right; */
+  width: 60px;
+  height: 34px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px; 
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: lightskyblue;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.modal-switch{
+  margin-bottom: 20px;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+  
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+#back2Top {
+  width: 60px;
+  line-height: 70px;
+  overflow: hidden;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+  -moz-transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+  background-color: lightskyblue;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+  text-decoration: none;
+}
+#back2Top:hover {
+  background-color: lightskyblue;
+  color: #000;
+}
