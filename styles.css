@@ -2,7 +2,7 @@ html,body{
   height: 100%;
   margin: 0;
   padding: 0;
-  background: url("./Assets/2927262.jpg") no-repeat center;
+  background: url("./Assets/abstract-background-1.jpg") no-repeat center;
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -31,7 +31,7 @@ html,body{
 #footer{
   color: white;
   text-align: center;
-  background-color: #0455b1f5;
+  background-color: black;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -85,7 +85,7 @@ h3{
   border: 2px solid black;
 }
 .coinDivClass{
-  background-image:url("./Assets/abstract-background-297.png");
+  background-image:url("./Assets/Color_Hunt_Palette_108974.png");
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto; 
@@ -138,7 +138,7 @@ h3{
   overflow: hidden;
   position: relative;
   border-radius: 8px;   
-  background-image:url("./Assets/pngfuel.com.png");
+  background-color: #070d59;
   background-repeat: no-repeat;
   background-size: cover;
 }
