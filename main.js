@@ -88,7 +88,7 @@ function aboutPage() {
 
 //
 function loader(component) {
-    let gif = '<img  src="./Assets/762.gif"></img>';
+    let gif = '<img  src="./Assets/Spinner-1s-247px.gif"></img>';
     let loaderDiv = `<div class="loader" col-12">${gif}</div>`;
     $(loaderDiv).append(gif);
     $(component).append(loaderDiv);
@@ -467,8 +467,17 @@ $(document).on("click", "#closeModal", function () {
 // function that toggles the info div, filling with data from the server about the coin.
 function moreInfo() {
     let coinId = this.id
-    loader(`#newInfoDiv${coinId}`);
-    $(`#newInfoDiv${coinId}`).slideToggle('slow', getFromServer(coinId));
+    if($(`#newInfoDiv${coinId}`).text() === ''){
+        loader(`#newInfoDiv${coinId}`);
+        $(`#newInfoDiv${coinId}`).slideToggle('slow', getFromServer(coinId));
+        console.log('called from api')
+        setTimeout(function(){
+            ($(`#newInfoDiv${coinId}`).text(''))
+        },120000)
+    }
+    else{
+        $(`#newInfoDiv${coinId}`).slideToggle('slow')
+        console.log('called from locall cache')}
 }
 
 function getFromServer(coinId) {

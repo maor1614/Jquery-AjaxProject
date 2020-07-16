@@ -141,6 +141,7 @@ h3{
   background-color: #070d59;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.8;
 }
 .topnav a {
   float: left;
