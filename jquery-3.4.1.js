@@ -13,7 +13,7 @@
  */
 ( function( global, factory ) {
 
-	"use strict";
+	"use strict";"btn btn-primary btn-sm m-2"
 
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
