@@ -59,8 +59,17 @@ function aboutPage() {
         </p>
         <h1>About the prooject </h1>
         <p>
-        This Project Contains 
-        .</p>
+        This Project Contains all what we have learned in the last 4 months in our Full-Stack Course, Which includes subjects as:  
+        </p>
+        
+        <ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>BootStrap</li>
+<li>Jquery&Ajax</li>
+<li>Arrays Methods &Functions</li>
+</ul>
     </div>`);
 
   aboutMainDiv.append(aboutMeDiv);
@@ -479,7 +488,7 @@ function moreInfo() {
     }, 120000);
   } else {
     $(`#newInfoDiv${coinId}`).slideToggle("slow");
-    console.log("called from locall cache");
+    console.log("called from local cache");
   }
 }
 
@@ -513,6 +522,7 @@ function getFromServer(coinId) {
     },
   });
 }
+
 document.querySelector("#searchCoinsBtn").addEventListener("click", getSearch);
 function getSearch(e) {
   e.preventDefault();
